@@ -1,0 +1,30 @@
+div {
+  border: 1px solid black;
+}
+#calc {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 400px;
+}
+#numbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 7px;
+  gap: 5px;
+}
+#screen {
+  text-align: right;
+  height: 40px;
+}
+.num {
+  height: 70px;
+  width: 70px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.calcs {
+  text-align: center;
+}
