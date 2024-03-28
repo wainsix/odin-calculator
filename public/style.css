@@ -1,5 +1,6 @@
 div {
   gap: 4px;
+  border: 2px solid black;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -10,6 +11,9 @@ body {
   flex-direction: column;
   height: 400px;
   width: 400px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: coral;
 }
 #numbox {
   display: flex;
@@ -18,13 +22,14 @@ body {
   align-items: center;
   justify-content: center;
   gap: 5px;
+  border: none;
 }
 #screen {
   text-align: right;
   height: 40px;
-  border: 2px solid black;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 5px;
+  background-color: bisque;
 }
 
 #operatorbox {
@@ -32,13 +37,14 @@ body {
   align-items: center;
   justify-content: center;
   gap: 5px;
+  border: none;
 }
 .num {
   height: 70px;
   width: 70px;
   border-radius: 10px;
   text-align: center;
-  border: 1px solid black;
+  background-color: bisque;
 }
 
 .calcs {
@@ -46,5 +52,12 @@ body {
   height: 70px;
   width: 70px;
   border-radius: 10px;
-  border: 1px solid black;
+  background-color: bisque;
+}
+
+.num:hover,
+.calcs:hover {
+  background-color: chocolate;
+  color: aquamarine;
+  cursor: pointer;
 }
