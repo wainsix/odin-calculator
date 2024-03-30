@@ -10,25 +10,35 @@
   </head>
   <body>
     <div id="calc">
-      <div id="screen"><p>125726269382982</p></div>
+      <div id="screen"></div>
       <div id="numbox">
-        <div id="num1" class="num"><p>1</p></div>
-        <div id="num2" class="num"><p>2</p></div>
-        <div id="num3" class="num"><p>3</p></div>
-        <div id="num4" class="num"><p>4</p></div>
-        <div id="num5" class="num"><p>5</p></div>
-        <div id="num6" class="num"><p>6</p></div>
-        <div id="num7" class="num"><p>7</p></div>
-        <div id="num8" class="num"><p>8</p></div>
-        <div id="num9" class="num"><p>9</p></div>
-        <div id="num0" class="num"><p>0</p></div>
+        <div id="num1" class="num" onclick="handleNumClick('1')"><p>1</p></div>
+        <div id="num2" class="num" onclick="handleNumClick('2')"><p>2</p></div>
+        <div id="num3" class="num" onclick="handleNumClick('3')"><p>3</p></div>
+        <div id="num4" class="num" onclick="handleNumClick('4')"><p>4</p></div>
+        <div id="num5" class="num" onclick="handleNumClick('5')"><p>5</p></div>
+        <div id="num6" class="num" onclick="handleNumClick('6')"><p>6</p></div>
+        <div id="num7" class="num" onclick="handleNumClick('7')"><p>7</p></div>
+        <div id="num8" class="num" onclick="handleNumClick('8')"><p>8</p></div>
+        <div id="num9" class="num" onclick="handleNumClick('9')"><p>9</p></div>
+        <div id="num0" class="num" onclick="handleNumClick('0')"><p>0</p></div>
       </div>
       <div id="operatorbox">
-        <div class="calcs" id="add"><p>+</p></div>
-        <div class="calcs" id="sub"><p>-</p></div>
-        <div class="calcs" id="multi"><p>*</p></div>
-        <div class="calcs" id="div"><p>/</p></div>
-        <div class="calcs" id="equals"><p>=</p></div>
+        <div class="calcs" onclick="handleCalcClick('add')" id="add">
+          <p>+</p>
+        </div>
+        <div class="calcs" onclick="handleCalcClick('sub')" id="sub">
+          <p>-</p>
+        </div>
+        <div class="calcs" onclick="handleCalcClick('multi')" id="multi">
+          <p>*</p>
+        </div>
+        <div class="calcs" onclick="handleCalcClick('div')" id="div">
+          <p>/</p>
+        </div>
+        <div class="calcs" onclick="handleEqualsClick('equals')" id="equals">
+          <p>=</p>
+        </div>
       </div>
     </div>
   </body>
