@@ -23,6 +23,16 @@ function handleEqualsClick() {
     } else if (calcu == "*") {
       num3 = num1 * num4;
     } else if (calcu == "/") {
+      if (num4 === 0 || num1 === 0) {
+        document.getElementById("screen").innerText =
+          "Ei voida jakaa nollalla!";
+        num1 = "";
+        num2 = "";
+        num3 = "";
+        num4 = "";
+        calcu = "";
+        return;
+      }
       num3 = num1 / num4;
     }
     document.getElementById("screen").innerHTML =
